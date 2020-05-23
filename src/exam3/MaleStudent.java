@@ -1,7 +1,7 @@
 package exam3;
 
 public class MaleStudent extends Student {
-    final double GRANT_SIZE = 4000;
+    static final double GRANT_SIZE = 4000;
 
     public MaleStudent(String studentName, String studentGroup, double averageGrade) {
         super (studentName, studentGroup, averageGrade);
