@@ -1,5 +1,5 @@
 package exam3;
 
-public enum Gender { MALE, FEMALE };
+public enum Gender {MALE, FEMALE}
 
 
