@@ -1,5 +1,5 @@
 public class exam3 {
-    public abstract class Student {
+    abstract class Student {
         String studentName;
         String studentGroup;
         double averageGrade;
