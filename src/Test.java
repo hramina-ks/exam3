@@ -1,12 +1,18 @@
+import exam3.*;
 public class Test {
     public static void main(String[] args) {
-        exam3.StudentFactory factory = new exam3.StudentFactory();
-        exam3.Student[] students = {
-                exam3.StudentFactory.makeStudent("Anna", "first", exam3.Gender.FEMALE,3.5),
-                exam3.StudentFactory.makeStudent("John", "first", exam3.Gender.MALE,4),
-                exam3.StudentFactory.makeStudent("Peter", "first", exam3.Gender.MALE,3)
+        StudentFactory factory = new StudentFactory();
+        Student[] students = {
+                factory.makeStudent("Anna", "first", Gender.FEMALE,2.5),
+                factory.makeStudent("John", "first", Gender.MALE,2),
+                factory.makeStudent("Peter", "first", Gender.MALE,5)
         };
-        System.out.println(students);
+        for (Student student: students) {
+            System.out.print(student.studentName);
+            System.out.print(" - ");
+            System.out.print(student.getGrant(student.averageGrade));
+            System.out.println();
+        }
     }
 }
 
